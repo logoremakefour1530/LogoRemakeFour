@@ -1,0 +1,11 @@
+- name: HTTPS certificate check
+  # You may pin to the exact commit or the version.
+  # uses: weioai/https-check-action@91358f50d71d2a935ab595e7e885bf7c1ba286a0
+  uses: weioai/https-check-action@v1.0.0
+  with:
+    # Hosts or URLs to check, separated by spaces, commas or newlines (e.g. "logoremakefour.com www.logoremakefour.com shop.example.com:8443")
+    urls: https://www.logoremakefour.com
+    # Fail when a certificate expires in fewer than this many days
+    min-days: # optional, default is 14
+    # Seconds to wait for each TLS handshake
+    timeout: # optional, default is 10
