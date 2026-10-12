@@ -1,0 +1,19 @@
+- name: Create DNS Record
+  # You may pin to the exact commit or the version.
+  # uses: kriasoft/create-dns-record@b0758508fbff2d6ad3e4ef693c83f49a32f4889f
+  uses: kriasoft/create-dns-record@v1
+  with:
+    # DNS record type, e.g. "A", "CNAME", etc.
+    type: 
+    # DNS record name, e.g. "www.logoremakefour.com"
+    name: 
+    # DNS record content, e.g. "127.0.0.1"
+    content: # optional
+    # Time to live for DNS record. Value of 1 is 'automatic'
+    ttl: # optional, default is 1
+    # Whether the record is receiving the performance and security benefits of Cloudflare
+    proxied: # optional, default is true
+    # CloudFlare API token
+    token: 
+    # CloudFlare zone
+    zone: 
